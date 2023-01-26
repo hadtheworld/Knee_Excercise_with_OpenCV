@@ -15,11 +15,11 @@ Main goal:
   
 **Detaile explainatio on Code**:
      The code has following parts:
-     - is_knee_bend(keypoints,w,h):- This function takes in the processed image frame of mediapipe posture analysis as "keypoints" and width of human as "w" and height as "h" and checks if the person has bend their knees or not and returns "True" or "False" Accordingly.
-     - is_leg_strech(keypoints,w,h):-This function takes in the processed image frame of mediapipe posture analysis as "keypoints" and width of human as "w" and height as "h" and checks if the person has streched their legs or not and returns "True" or "False" Accordingly.
-     - Create_video(recorded_video):- This function creates the output video using the list if image frames in "recorded_video". It uses the cv2.VideoWriter() function
-     - Calculate_performance(rep_count):- this function checks the performance of the program by checking for the amount of correct reps detected and gice the percentage of effeciency as the performance.
-     - infinite while loop:- It is used for creating frames out of the video and calling above functions to analyse them according to a knee bend and strech reps of >=8 sec each. this loop will run till no frame is generated or the video ends.
+     - is_knee_bend(keypoints,w,h): This function takes in the processed image frame of mediapipe posture analysis as "keypoints" and width of human as "w" and height as "h" and checks if the person has bend their knees or not and returns "True" or "False" Accordingly.
+     - is_leg_strech(keypoints,w,h):This function takes in the processed image frame of mediapipe posture analysis as "keypoints" and width of human as "w" and height as "h" and checks if the person has streched their legs or not and returns "True" or "False" Accordingly.
+     - Create_video(recorded_video): This function creates the output video using the list if image frames in "recorded_video". It uses the cv2.VideoWriter() function
+     - Calculate_performance(rep_count): this function checks the performance of the program by checking for the amount of correct reps detected and gice the percentage of effeciency as the performance.
+     - infinite while loop: It is used for creating frames out of the video and calling above functions to analyse them according to a knee bend and strech reps of >=8 sec each. this loop will run till no frame is generated or the video ends.
      
      
 **Comments are also provided inside the code for easy understanding and flow of the program
