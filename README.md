@@ -10,7 +10,7 @@ Main goal:
   - Here the frames are read as static image files using "mp_pose.Pose(static_image_mode=True, min_detection_confidence=0.5)".
   - mp_pose=mp.solutions.pose
   - In each frame check for the knee movements and give instructions to "Keep your knee bent" and "Stretch your leg" as per the time of 8sec for each bending and relaxing
-  - cout of successful reps is taken to give the final result of how many reps did the user made.
+  - count of successful reps is taken to give the final result of how many reps did the user made.
   
   
 **Detaile explainatio on Code**:
