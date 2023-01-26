@@ -15,15 +15,15 @@ Main goal:
   
 **Detaile explainatio on Code**:
 The code has following parts:
-     - "is_knee_bend(keypoints,w,h)" This function takes in the processed image frame of mediapipe posture analysis as "keypoints" and width of human as "w" and height as "h" and checks if the person has bend their knees or not and returns "True" or "False" Accordingly.
+     - is_knee_bend(keypoints,w,h):- This function takes in the processed image frame of mediapipe posture analysis as "keypoints" and width of human as "w" and height as "h" and checks if the person has bend their knees or not and returns "True" or "False" Accordingly.
      
-     - "is_leg_strech(keypoints,w,h)"This function takes in the processed image frame of mediapipe posture analysis as "keypoints" and width of human as "w" and height as "h" and checks if the person has streched their legs or not and returns "True" or "False" Accordingly.
+     - is_leg_strech(keypoints,w,h):-This function takes in the processed image frame of mediapipe posture analysis as "keypoints" and width of human as "w" and height as "h" and checks if the person has streched their legs or not and returns "True" or "False" Accordingly.
      
-     - "Create_video(recorded_video)" This function creates the output video using the list if image frames in "recorded_video". It uses the cv2.VideoWriter() function
+     - Create_video(recorded_video):- This function creates the output video using the list if image frames in "recorded_video". It uses the cv2.VideoWriter() function
      
-     - "Calculate_performance(rep_count)" this function checks the performance of the program by checking for the amount of correct reps detected and gice the percentage of effeciency as the performance.
+     - Calculate_performance(rep_count):- this function checks the performance of the program by checking for the amount of correct reps detected and gice the percentage of effeciency as the performance.
      
-     - "infinite while loop" It is used for creating frames out of the video and calling above functions to analyse them according to a knee bend and strech reps of >=8 sec each. this loop will run till no frame is generated or the video ends.
+     - infinite while loop:- It is used for creating frames out of the video and calling above functions to analyse them according to a knee bend and strech reps of >=8 sec each. this loop will run till no frame is generated or the video ends.
      
      
 **Comments are also provided inside the code for easy understanding and flow of the program
@@ -32,8 +32,13 @@ LEARNING IN THIS PROJECT:-
 As this was my first expoerience with OpenCv and mediapipe I enjoyed the functionalities provided by them and ease of image analysis using them.
       I this project I learned:-
       - human pose analysis using mediapipe which converts the image frames into coordinates of various human body parts and propotions whic can be used to create neede logics like in my case to analyse knee bends.
+      
       - cv2.VideoCapture() in opencv:- this function helps in goin through the video frame by frames and seperates frames from them to anayles it.
+      
       - .set() in OpenCv:- This function allows us to jump to a specific time in the video which we can use to generate limited amount of frames as per our need of the video.
+      
       - .read() in OpenCv:- This function allows us to get frame from a capured video instance which we have got using cv2.VideoCapture
+      
       - cv2.imread(),cv2.imwrite() :- to create image out of frames obtained above and read them to generate videos
+      
       - cv2.VideoWriter():- This creates the video by combining the image files accoding to specefied frame rate and frame size.
